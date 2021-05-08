@@ -8,7 +8,7 @@ Install using `npm -i megacles -g`
 
 ### Prerequisites
 
-You'll need to be running > node 12
+You'll need to be running node 14 at least
 
 ### Usage
 
