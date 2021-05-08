@@ -1,0 +1,36 @@
+{
+  "name": "megacles",
+  "version": "1.0.0",
+  "description": "Proxy a directory to another and trigger script when the source directory changes",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "tsc && node lib/index.js",
+    "build": "tsc",
+    "test": "npm run build && node lib/index.js -s ./.test/sourcefolder -p ./.test/proxyfolder -b ./.test/backupfolder -g proxyglob/**/target/ --watch \"npm -v\""
+  },
+  "files": [
+    "lib/*.js",
+    "lib/**/*.js"
+  ],
+  "bin": {
+    "megacles": "./lib/index.js"
+  },
+  "author": "baronvondrew",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@types/glob": "^7.1.3",
+    "@types/node": "^15.0.2",
+    "@types/prompt": "^1.1.0",
+    "@types/yargs": "^16.0.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.1",
+    "glob": "^7.1.6",
+    "prompt": "^1.1.0",
+    "rxjs": "^7.0.0",
+    "yargs": "^17.0.1"
+  }
+}
