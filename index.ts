@@ -91,7 +91,7 @@ let mustUnproxy = false;
         subscriptions.push(new Observable<string>(
             subscribe => { 
                 const watcher = chokidar.watch(argv.sourcePath, {
-                    ignored:  ignore ?? ignoreDot ? /(^|[\/\\])\../ : null,
+                    ignored:  ignore || ignoreDot ? /(^|[\/\\])\../ : null,
                     ignoreInitial: true,
                     persistent: true
                 });
