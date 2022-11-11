@@ -1,6 +1,6 @@
 {
   "name": "megacles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Proxy a directory to another and trigger script when the source directory changes",
   "main": "lib/index.js",
   "scripts": {
